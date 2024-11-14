@@ -1,0 +1,6 @@
+<br>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+    <%= f.input :rating, collection: Review::RATING.sort %>
+    <%= f.input :content %>
+    <%= f.submit %>
+<% end %>
